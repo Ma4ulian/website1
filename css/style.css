@@ -1,0 +1,435 @@
+/* Общие стили */
+ html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Varela Round';
+  letter-spacing: 0.0625em;
+}
+
+section {
+    position: relative;
+    z-index: 100;
+}
+
+h2{
+	line-height: 1.5;
+    font-weight: 600;
+    color: #232323;
+}
+
+a {
+  color: #ee3158;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
+}
+
+/* Навигация */
+#logo {
+	color: white;
+	font-weight: 700;
+    padding: .9rem 0;
+}
+
+.navbar-shrink #logo {
+	color: #161616;
+}
+
+#logo:hover {
+	color: #ee3158;
+}
+
+#mainNav {
+  min-height: 56px;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #ee3158;
+  border: 1px solid #ee3158;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover .nav-link {
+  color: #ee3158!important;
+  border-bottom: 1px solid #ee3158;
+  outline: none;
+  background-color: transparent;
+}
+.nav-link{
+	color: white!important;
+}
+
+#mainNav .navbar-nav .nav-item:after{
+	content: " ";
+    display: none;
+}
+
+#mainNav .navbar-nav .nav-item:after:hover {
+	content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ee3158;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.navbar-shrink {
+	background-color: white;
+}
+
+.navbar-shrink .navbar-nav .nav-link {
+	color: #212529!important;	
+}
+
+/* Header */
+
+.masthead {
+    height: 100vh;
+    padding: 0;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    min-height: 35rem;
+    background: url("../images/01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: black;	
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+#main-block {
+	margin-top: -18%;
+    width: 100%;
+}
+
+#main-button {
+	margin-bottom: -15%;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #48D1CC;
+}
+
+.btn-primary:hover {
+  background-color: #4f837f;
+}
+
+.btn-primary:focus {
+  background-color: #4f837f;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #467370 !important;
+}
+
+/* Услуги */
+
+.section-title:hover:after {
+	width: 80px;
+}
+
+.section-title:after {
+	content: " ";
+    display: block;
+    width: 55px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.section-title {
+    color: #232323;
+    font-family: 'Varela Round';
+    position: relative;
+	margin-bottom: 50px;
+}
+
+.section-title .highlight {
+    color: #ee3158;
+}
+
+.section-padding-distance{
+	padding: 7em 0;
+}
+
+.about-creative-section .images-wrapper {
+    margin-bottom: 40px;
+}
+
+.about-creative-section .images-wrapper .img-wrapper {
+    overflow: hidden;
+    border-radius: 6px;
+}	
+
+.about-creative-section .steps-wrapper .step-wrapper {
+    margin-bottom: 30px;
+}
+
+.about-creative-section .steps-wrapper .step-wrapper .num {
+    color: #ee3158;
+    font-weight: 600;
+    line-height: 1!important;
+    height: 60px;
+    margin-right: 25px;
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about-creative-section .steps-wrapper .step-wrapper .step-body {
+    padding-top: 5px;
+}
+
+.about-creative-section .steps-wrapper .step-wrapper .step-body h6 {
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+/* Стили блока Общая информация */
+.counters-section-type-2 .counters-wrapper .counter-box:hover .prop-obj,.counters-section-type-2 .counters-wrapper .counter-box:hover .title-counter{
+	color: #ee3158;
+}
+
+.border-top-simple {
+    border-top: 1px solid #A9A9A9;
+}
+.border-bottom-simple {
+    border-bottom: 1px solid #A9A9A9;
+}
+
+.counters-section-type-2 .counters-wrapper .counter-box {
+    padding: 120px 20px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.flex-column {
+    -webkit-box-orient: vertical!important;
+    flex-direction: column!important;
+}
+
+.counters-section-type-2 .counters-wrapper .counter-box .title-counter {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-family: 'Varela Round';
+    color: rgba(0,0,0,.3);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+.counters-section-type-2 .counters-wrapper .counter-box:not(:last-child):before {
+    content: " ";
+    height: 30%;
+    width: 1px;
+    background-color: #A9A9A9;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.counters-section-type-2 .counters-wrapper .counter-box .prop-obj {
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(0,0,0,.3);
+    line-height: 1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.counters-section-type-2 .counters-wrapper .counter-box:not(:last-child):after {
+    content: " ";
+    height: 30%;
+    width: 1px;
+    background-color: #A9A9A9;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Стили Залы */
+
+.projects-section .featured-text {
+  padding: 0 0 0 2rem;
+  border-left: .5rem solid #ee3158;
+}
+
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+/* Стили подписки и контактов */
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../images/05.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #ee3158;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #ee3158;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #ee3158 !important;
+}
+
+.text-primary {
+  color: #ee3158 !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
